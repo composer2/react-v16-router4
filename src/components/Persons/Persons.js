@@ -7,17 +7,10 @@ class Persons extends PureComponent {
     this.lastPersonRef = React.createRef();
     console.log("[Persons.js] Inside Constructor", props);
   }
-
-  componentWillMount() {
-    console.log("[Persons.js] Inside componentWillMount");
-  }
   
   componentDidMount(){
     console.log("[Persons.js] Inside componentDidMount");
     this.lastPersonRef.current.focus();
-  }
-  componentWillReceiveProps(nextProps) {
-    console.log('[UPDATE Persons.js] inside componentWillReceiveProps', nextProps );
   }
 
   // shouldComponentUpdate(nextProps,  nextState) {
@@ -27,9 +20,6 @@ class Persons extends PureComponent {
   //   nextProps.clicked !== this.props.clicked;
   // }
 
-  componentWillUpdate(nextProps,  nextState) {
-    console.log('[UPDATE Persons.js] inside componentWillUpdate', nextProps, nextState );
-  }
 
   componentDidUpdate() {
     console.log('[UPDATE Persons.js] inside componentDidUpdate');

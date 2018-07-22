@@ -13,10 +13,6 @@ class Person extends Component {
     console.log("[Person.js] Inside Constructor", props);
   }
 
-  componentWillMount() {
-    console.log("[Person.js] Inside componentWillMount");
-  }
-
   componentDidMount() {
     console.log("[Person.js] Inside componentDidMount");
     if (this.props.position === 0) {
